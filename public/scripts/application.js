@@ -20,7 +20,7 @@ $(function () {
     alert("WebSockets aren't supported in your browser!");
   }
   else {
-    ws = new WebSocket('ws://127.0.0.1:9090');
+    ws = new WebSocket('ws://192.168.0.106:9090');
     ws.onopen = function (evt) {
       $("#the-title").css('color', 'green');
       ws.send(JSON.stringify({

@@ -6,6 +6,8 @@ require 'haml'
 
 # Dir[File.dirname(__FILE__) + '/lib/*.rb'].each {|file| require file }
 
+set :bind, '0.0.0.0'
+
 get "/" do
   redirect "/main"
 end
